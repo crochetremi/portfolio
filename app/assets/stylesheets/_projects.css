@@ -1,0 +1,226 @@
+/*
+    ========================================
+    Gallery & Projects Section
+    ========================================
+*/
+.gallery-hero {
+  padding: 4rem var(--navbar-padding) 2rem;
+  text-align: center;
+  background-color: var(--color-top-bar-bg);
+}
+
+.filters {
+  padding: 2rem var(--navbar-padding);
+  text-align: center;
+  background-color: var(--color-background);
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 0.5rem 1.5rem;
+  border: 2px solid var(--color-border);
+  background-color: transparent;
+  color: var(--color-text-primary);
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: var(--font-weight-bold);
+  transition: all var(--transition-speed) ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background-color: var(--color-primary-brand);
+  color: var(--color-background);
+  border-color: var(--color-primary-brand);
+}
+
+/* Projects Grid */
+.projects {
+  padding: 2rem var(--navbar-padding) 4rem;
+  background-color: var(--color-background);
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+  max-width: var(--container-width);
+  margin: 0 auto;
+}
+
+.project-card {
+  background-color: var(--color-background);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.project-image {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  background-color: var(--color-top-bar-bg);
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-image img {
+  transform: scale(1.05);
+}
+
+.project-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(13, 110, 253, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity var(--transition-speed) ease;
+}
+
+.project-card:hover .project-overlay {
+  opacity: 1;
+}
+
+.project-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.project-link {
+  width: 50px;
+  height: 50px;
+  background-color: var(--color-background);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform var(--transition-speed) ease;
+}
+
+.project-link:hover {
+  transform: scale(1.1);
+}
+
+.project-link .icon {
+  width: 24px;
+  height: 24px;
+  fill: var(--color-primary-brand);
+}
+
+.project-content {
+  padding: 1.5rem;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: var(--color-text-primary);
+}
+
+.project-description {
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+/* Gallery CTA */
+.gallery-cta {
+  padding: 4rem var(--navbar-padding);
+  text-align: center;
+  background-color: var(--color-top-bar-bg);
+}
+
+.gallery-cta h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--color-text-primary);
+}
+
+.gallery-cta p {
+  color: var(--color-text-secondary);
+  margin-bottom: 2rem;
+  font-size: 1.125rem;
+}
+
+/* CTA Section */
+.cta-section {
+  padding: 4rem var(--navbar-padding);
+  text-align: center;
+  background: linear-gradient(135deg, var(--color-primary-brand) 0%, var(--color-primary-hover) 100%);
+  color: var(--color-background);
+}
+
+.cta-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--color-background);
+}
+
+.cta-section p {
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cta-section .btn-primary {
+  background-color: var(--color-background);
+  color: var(--color-primary-brand);
+}
+
+.cta-section .btn-primary:hover {
+  background-color: var(--color-top-bar-bg);
+}
+
+.cta-section .btn-secondary {
+  border-color: var(--color-background);
+  color: var(--color-background);
+}
+
+.cta-section .btn-secondary:hover {
+  background-color: var(--color-background);
+  color: var(--color-primary-brand);
+}
+
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}

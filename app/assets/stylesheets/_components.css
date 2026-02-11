@@ -1,0 +1,84 @@
+/*
+    ========================================
+    Composants Réutilisables
+    ========================================
+*/
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 var(--navbar-padding);
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-weight: var(--font-weight-bold);
+  text-align: center;
+  border-radius: 4px;
+  transition: all var(--transition-speed) ease;
+  cursor: pointer;
+  border: none;
+  font-size: 1rem;
+}
+
+.btn-primary {
+  background-color: var(--color-primary-brand);
+  color: var(--color-background);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: var(--color-primary-hover);
+  color: var(--color-background);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--color-primary-brand);
+  border: 2px solid var(--color-primary-brand);
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+  background-color: var(--color-primary-brand);
+  color: var(--color-background);
+}
+
+/* Section Titles */
+.section-title {
+  font-size: 2.5rem;
+  font-weight: var(--font-weight-bold);
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: var(--color-text-primary);
+}
+
+.page-title {
+  font-size: 3rem;
+  font-weight: var(--font-weight-bold);
+  margin-bottom: 1rem;
+  color: var(--color-text-primary);
+}
+
+.page-subtitle {
+  font-size: 1.25rem;
+  color: var(--color-text-secondary);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Tags */
+.tag,
+.tech-tag {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background-color: var(--color-top-bar-bg);
+  color: var(--color-text-secondary);
+  border-radius: 20px;
+  font-size: 0.875rem;
+  margin: 0.25rem;
+}

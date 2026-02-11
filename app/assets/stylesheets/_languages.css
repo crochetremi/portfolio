@@ -1,0 +1,55 @@
+/*
+    ========================================
+    Languages Section
+    ========================================
+*/
+.languages {
+  padding: 4rem var(--navbar-padding);
+  background-color: var(--color-background);
+}
+
+.languages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.language-card {
+  background-color: var(--color-top-bar-bg);
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+}
+
+.language-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.language-flag {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.language-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--color-text-primary);
+}
+
+.language-level {
+  color: var(--color-primary-brand);
+  font-weight: var(--font-weight-bold);
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
+}
+
+.language-description {
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  font-size: 0.95rem;
+}

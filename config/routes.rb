@@ -5,6 +5,6 @@ Rails.application.routes.draw do
   # root "posts#index"
   root "home#index"
 
-  get "about", to: "home#about"
+  get "gallery", to: "home#gallery"
 
 end

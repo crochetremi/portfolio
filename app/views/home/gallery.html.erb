@@ -1,0 +1,117 @@
+<!-- Gallery Header -->
+<section class="gallery-hero">
+  <div class="container">
+    <h1 class="page-title">Galerie de Projets</h1>
+    <p class="page-subtitle">
+      Focus sur l'infrastructure, le DevOps et l'architecture système. 
+      Projets hébergés et testés sur mon Homelab personnel.
+    </p>
+  </div>
+</section>
+
+<!-- Filters -->
+<section class="filters">
+  <div class="container">
+    <div class="filter-buttons">
+      <button class="filter-btn active" data-filter="all">Tous</button>
+      <button class="filter-btn" data-filter="infrastructure">Infrastructure</button>
+      <button class="filter-btn" data-filter="devops">DevOps</button>
+      <button class="filter-btn" data-filter="learning">Apprentissage</button>
+    </div>
+  </div>
+</section>
+
+<!-- Projects Grid -->
+<section class="projects">
+  <div class="container">
+    <div class="projects-grid">
+
+      <!-- Project 1: Portfolio Website -->
+      <article class="project-card" data-category="learning">
+        <div class="project-image">
+          <img src="/images/portfolio-preview.jpg" alt="Portfolio Website" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 300%22%3E%3Crect fill=%22%23667eea%22 width=%22400%22 height=%22300%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-family=%22monospace%22 font-size=%2224%22 fill=%22white%22%3EPortfolio%3C/text%3E%3C/svg%3E'">
+          <div class="project-overlay">
+            <div class="project-links">
+              <a href="#" class="project-link" aria-label="Voir le projet">
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path d="M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C17,19.5 21.27,16.39 23,12C21.27,7.61 17,4.5 12,4.5Z" />
+                </svg>
+              </a>
+              <a href="#" class="project-link" aria-label="Code source">
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">Portfolio - Premier Projet Rails 🌟</h3>
+          <p class="project-description">
+            Mon premier projet avec Ruby on Rails ! Utilisé comme cas pratique pour apprendre 
+            le framework, mais surtout pour mettre en place un déploiement complet sur mon 
+            Homelab : Docker, Kamal, reverse proxy Nginx, monitoring Prometheus/Grafana, et 
+            automatisation CI/CD avec GitHub Actions. Un projet d'apprentissage qui couvre 
+            toute la stack DevOps.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">Ruby on Rails (learning)</span>
+            <span class="tech-tag">Docker</span>
+            <span class="tech-tag">Kamal</span>
+            <span class="tech-tag">Homelab Deploy</span>
+            <span class="tech-tag">Nginx</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 2: Home Lab -->
+      <article class="project-card" data-category="infrastructure">
+        <div class="project-image">
+          <img src="/images/homelab-preview.jpg" alt="Home Lab Infrastructure" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 300%22%3E%3Crect fill=%22%2320b2aa%22 width=%22400%22 height=%22300%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-family=%22monospace%22 font-size=%2224%22 fill=%22white%22%3EHome Lab%3C/text%3E%3C/svg%3E'">
+          <div class="project-overlay">
+            <div class="project-links">
+              <a href="#" class="project-link" aria-label="Voir le projet">
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path d="M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C17,19.5 21.27,16.39 23,12C21.27,7.61 17,4.5 12,4.5Z" />
+                </svg>
+              </a>
+              <a href="#" class="project-link" aria-label="Code source">
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">Infrastructure Home Lab</h3>
+          <p class="project-description">
+            Infrastructure bare metal personnelle pour production et expérimentation : 
+            serveurs Linux Debian, orchestration Docker Swarm, réseau segmenté avec VLAN, 
+            reverse proxy Nginx avec SSL automatique, stack de monitoring complète 
+            (Prometheus, Grafana, Loki), sauvegardes automatisées et gestion centralisée 
+            de la configuration. Plateforme d'hébergement pour tous mes projets personnels.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">Bare Metal Servers</span>
+            <span class="tech-tag">Linux Debian</span>
+            <span class="tech-tag">Docker Swarm</span>
+            <span class="tech-tag">Nginx</span>
+            <span class="tech-tag">Prometheus/Grafana</span>
+            <span class="tech-tag">Networking</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- Call to Action -->
+<section class="gallery-cta">
+  <div class="container">
+    <h2>Intéressé par l'un de ces projets ?</h2>
+    <p>N'hésitez pas à me contacter pour en discuter plus en détail.</p>
+    <a href="mailto:remicrochet.310@orange.fr" class="btn btn-primary">Discutons ensemble</a>
+  </div>
+</section>

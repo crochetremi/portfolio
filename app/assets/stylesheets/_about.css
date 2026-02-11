@@ -1,0 +1,25 @@
+/*
+    ========================================
+    About Section
+    ========================================
+*/
+.about {
+  padding: 4rem var(--navbar-padding);
+  background-color: var(--color-background);
+}
+
+.about-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about-text p {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: var(--color-text-primary);
+  margin-bottom: 1.5rem;
+}
+
+.about-text p:last-child {
+  margin-bottom: 0;
+}
