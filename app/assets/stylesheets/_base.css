@@ -16,7 +16,13 @@ body {
   line-height: 1.5;
   color: var(--color-text-primary);
   background-color: var(--color-background);
+  transition: background-color 0.4s ease, color 0.4s ease;
 }
+
+html {
+  transition: background-color 0.4s ease;
+}
+
 
 .content {
   padding: 2rem var(--navbar-padding) 1rem;

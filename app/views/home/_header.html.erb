@@ -8,12 +8,12 @@
                 </svg>
                 <span class="contact-info__text">06 04 06 03 31</span>
             </a>
-            <a href="mailto:remicrochet.310@orange.fr">
+            <a href="mailto:remicrochet@proton.me">
                 <!-- SVG Mail Icon -->
                 <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
                     <path d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z" />
                 </svg>
-                <span class="contact-info__text">remicrochet.310@orange.fr</span>
+                <span class="contact-info__text">remicrochet@proton.me</span>
             </a>
         </div>
         <div class="top-bar-section social-links">
@@ -28,9 +28,20 @@
                     <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
                 </svg>
             </a>
+            <button class="theme-toggle" data-controller="theme" data-action="click->theme#toggle" data-theme-target="toggle" aria-label="Toggle dark mode">
+                <svg class="icon sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path d="M12,17.5C9.5,17.5 7.5,15.5 7.5,13C7.5,10.5 9.5,8.5 12,8.5C14.5,8.5 16.5,10.5 16.5,13C16.5,15.5 14.5,17.5 12,17.5M12,6C8.7,6 6,8.7 6,12C6,15.3 8.7,18 12,18C15.3,18 18,15.3 18,12C18,8.7 15.3,6 12,6M12,2V4M12,20V22M19.1,5L20.5,3.6L21.9,5L20.5,6.4M2.1,19L3.5,17.6L4.9,19L3.5,20.4M19.1,19L20.5,20.4L19.1,21.8L17.7,20.4M2.1,5L3.5,6.4L2.1,7.8L0.7,6.4M22,12H20M4,12H2" />
+                </svg>
+                <svg class="icon moon-icon hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path d="M17.93,13.46C17.94,13.64 17.95,13.82 17.95,14C17.95,18.54 14.54,22.23 10.26,22.23C7.16,22.23 4.5,20.57 3.43,17.97C2.64,16.38 2.41,14.5 2.95,11.76C3.07,11.05 3.87,10.6 4.54,11L10.37,14.91H10.38L14.13,17.34C14.54,17.61 15.11,17.31 15.11,16.78V10.06C15.11,9.53 14.56,9.22 14.16,9.5L4.5,15.87C4.08,16.15 3.5,15.84 3.5,15.31A10.11,10.11 0 0,1 13.61,5.2C14.07,5.24 14.48,5.63 14.48,6.12C14.48,6.7 13.95,7.15 13.39,7.15C13.39,7.15 12.96,7.15 12.54,7.15C9.89,7.15 7.78,9.26 7.78,11.91C7.78,13.42 8.59,14.71 9.83,15.39C10.4,15.72 10.6,16.4 10.23,17C9.5,18.44 8.16,19.5 6.57,19.5C4.66,19.5 3.13,18 3.13,16M17.93,13.46Z" />
+                </svg>
+            </button>
         </div>
     </div>
     <div class="main-navbar header-container">
+        <div class="logo-circle">
+            <img src="/logo_initiale.png" alt="Rémi CROCHET Logo" class="logo-image">
+        </div>
         <a href="#" class="main-navbar__brand" aria-label="Homepage">Rémi CROCHET</a>
 
         <button class="main-navbar__toggle" id="navbarToggle" aria-label="Toggle navigation" aria-controls="navbarMenu" aria-expanded="false">
@@ -40,14 +51,12 @@
         <nav id="navbarMenu" class="main-navbar__menu" role="navigation" aria-labelledby="navbarToggle">
             <ul class="main-navbar__list">
                 <li class="main-navbar__item"><a href="/" class="main-navbar__link">Home</a></li>
-                <li class="main-navbar__item"><a href="/gallery" class="main-navbar__link">Gallerie</a></li>
+
                 <li class="main-navbar__item dropdown">
                     <a href="#" class="main-navbar__link" id="services-dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projets</a>
                     <ul class="dropdown-menu" aria-labelledby="services-dropdown">
-                        <li><a href="#">Portfolio</a></li>
                         <li><a href="#">Home Lab</a></li>
                         <li><a href="#">Minimal Bash</a></li>
-
                         <!--
                         <li><a href="#">Cloud Solutions</a></li>
                         <li><a href="#">Consulting</a></li>
@@ -55,6 +64,7 @@
                     </ul>
                 </li>
 
+                <li class="main-navbar__item"><a href="/gallery" class="main-navbar__link">Gallerie</a></li>
                 <li class="main-navbar__item main-navbar__item--cta">
                     <a href="#" class="main-navbar__link main-navbar__link--cta">Contact Me!</a>
                 </li>

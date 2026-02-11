@@ -25,3 +25,14 @@
   --navbar-padding: 1rem;
   --transition-speed: 0.2s;
 }
+
+/* Dark Mode */
+[data-theme="dark"] {
+  --color-background: #1a1a1a;
+  --color-text-primary: #e9ecef;
+  --color-text-secondary: #adb5bd;
+  --color-primary-brand: #0d6efd;
+  --color-primary-hover: #0b5ed7;
+  --color-border: #495057;
+  --color-top-bar-bg: #212529;
+}

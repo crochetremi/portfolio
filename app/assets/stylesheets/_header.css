@@ -254,6 +254,64 @@
   }
 }
 
+/* Logo Circle */
+.logo-circle {
+  width: 60px;
+  height: 60px;
+  border: 3px solid var(--color-primary-brand);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.logo-image {
+  width: 90%;
+  height: 90%;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+  all: unset;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.theme-toggle:hover,
+.theme-toggle:focus {
+  background-color: var(--color-border);
+  outline: 2px solid var(--color-primary-brand);
+}
+
+.theme-toggle .icon {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  fill: var(--color-text-secondary);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  opacity: 1;
+  transform: rotate(0deg) scale(1);
+}
+
+.theme-toggle .icon.hidden {
+  opacity: 0;
+  pointer-events: none;
+  transform: rotate(-90deg) scale(0.8);
+}
+
 @media (max-width: 576px) {
   .contact-info__text {
     display: none;
